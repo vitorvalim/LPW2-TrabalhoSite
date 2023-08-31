@@ -23,11 +23,11 @@
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0"> 
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/about">Sobre Nós</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('/') ? 'active' : ''}}" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('servicos') ? 'active' : ''}}" href="/servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('produtos') ? 'active' : ''}}" href="/produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('about') ? 'active' : ''}}" href="/about">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link {{ Request::is('#contact') ? 'active' : ''}}" href="#contact">Contato</a></li>
                     </ul>
                 </div>
             </div>
